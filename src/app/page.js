@@ -595,7 +595,6 @@ export default function TechNewsletterAgent() {
                 paddingBottom: 32,
                 borderTop: "3px solid #C8191A",
                 paddingTop: 28,
-                borderBottom: "1px solid #E5E5E5",
               }}
             >
               <div
@@ -692,7 +691,6 @@ export default function TechNewsletterAgent() {
                 style={{
                   textAlign: "center",
                   padding: "32px 0",
-                  borderTop: "1px solid #E5E5E5",
                   marginTop: 8,
                 }}
               >
