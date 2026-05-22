@@ -602,7 +602,7 @@ export default function TechNewsletterAgent() {
                   fontSize: 11,
                   textTransform: "uppercase",
                   letterSpacing: "0.15em",
-                  color: "#999",
+                  color: "#111111",
                   fontFamily: "'Inter', sans-serif",
                   fontWeight: 600,
                   marginBottom: 10,
