@@ -383,7 +383,7 @@ export default function TechNewsletterAgent() {
             }}
           >
             Tech news through the{" "}
-            <span style={{ color: "#C8191A" }}>
+            <span style={{ color: "#111111" }}>
               Get the Check
             </span>{" "}
             lens
@@ -464,7 +464,7 @@ export default function TechNewsletterAgent() {
               padding: "14px 18px",
               marginBottom: 16,
               fontSize: 14,
-              color: "#C8191A",
+              color: "#111111",
               fontFamily: "'Inter', sans-serif",
             }}
           >
@@ -506,7 +506,7 @@ export default function TechNewsletterAgent() {
                 >
                   Stop reason: <strong>{debugInfo.stopReason}</strong>
                   {debugInfo.stopReason === "max_tokens" && (
-                    <span style={{ color: "#C8191A" }}>
+                    <span style={{ color: "#111111" }}>
                       {" "}— Response was cut off despite 8192 token limit. Try selecting fewer beats.
                     </span>
                   )}
@@ -555,7 +555,7 @@ export default function TechNewsletterAgent() {
                 {p.status === "searching" ? (
                   <span className="spinner" />
                 ) : (
-                  <span style={{ fontSize: 14, color: "#C8191A", fontWeight: 700, width: 16, display: "inline-block" }}>✓</span>
+                  <span style={{ fontSize: 14, color: "#111111", fontWeight: 700, width: 16, display: "inline-block" }}>✓</span>
                 )}
                 <span>{p.category}</span>
                 {p.count !== undefined && (
@@ -572,7 +572,7 @@ export default function TechNewsletterAgent() {
                   padding: "12px 0",
                   fontSize: 14,
                   fontFamily: "'Inter', sans-serif",
-                  color: "#C8191A",
+                  color: "#111111",
                   fontWeight: 500,
                 }}
               >
@@ -661,7 +661,7 @@ export default function TechNewsletterAgent() {
                     lineHeight: 1.5,
                   }}
                 >
-                  <span style={{ fontWeight: 700, color: "#C8191A", marginRight: 6 }}>TLDR —</span>
+                  <span style={{ fontWeight: 700, color: "#111111", marginRight: 6 }}>TLDR —</span>
                   {story.tldr}
                 </div>
                 {story.source && (
