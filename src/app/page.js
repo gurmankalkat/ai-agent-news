@@ -665,14 +665,14 @@ export default function TechNewsletterAgent() {
                   {story.tldr}
                 </div>
                 {story.source && (
-                  <div style={{ marginTop: 10, fontSize: 12, color: "#bbb", fontFamily: "'Inter', sans-serif" }}>
+                  <div style={{ marginTop: 10, fontSize: 12, color: "#111111", fontFamily: "'Inter', sans-serif" }}>
                     via{" "}
                     {story.sourceUrl ? (
                       <a
                         href={story.sourceUrl}
                         target="_blank"
                         rel="noreferrer"
-                        style={{ color: "#bbb", textDecoration: "underline", textUnderlineOffset: 2 }}
+                        style={{ color: "#111111", textDecoration: "underline", textUnderlineOffset: 2 }}
                       >
                         {story.source}
                       </a>
@@ -699,7 +699,7 @@ export default function TechNewsletterAgent() {
                     fontFamily: "'Inter', sans-serif",
                     fontSize: 15,
                     fontStyle: "italic",
-                    color: "#999",
+                    color: "#111111",
                   }}
                 >
                   {newsletter.signoff}
