@@ -301,10 +301,20 @@ export default function TechNewsletterAgent() {
           transition: all 0.15s;
         }
         .save-btn:hover { border-color: #111111; color: #111111; }
+        @media print {
+          @page { margin: 1.5cm; }
+          * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+          body { background: white; }
+          .no-print { display: none !important; }
+          .save-btn { display: none !important; }
+          details { display: none !important; }
+          .story-card { break-inside: avoid; }
+        }
       `}</style>
 
       {/* HEADER */}
       <div
+        className="no-print"
         style={{
           padding: "20px 32px",
           display: "flex",
@@ -360,7 +370,7 @@ export default function TechNewsletterAgent() {
       <div style={{ maxWidth: 680, margin: "0 auto", padding: "52px 24px" }}>
 
         {/* HERO */}
-        <div className="fade-up" style={{ marginBottom: 52 }}>
+        <div className="fade-up no-print" style={{ marginBottom: 52 }}>
           <h1
             style={{
               fontFamily: "'Barlow Condensed', sans-serif",
@@ -396,7 +406,7 @@ export default function TechNewsletterAgent() {
         </div>
 
         {/* BEAT PICKER */}
-        <div className="fade-up fade-up-1" style={{ marginBottom: 28 }}>
+        <div className="fade-up fade-up-1 no-print" style={{ marginBottom: 28 }}>
           <label
             style={{
               display: "block",
@@ -425,7 +435,7 @@ export default function TechNewsletterAgent() {
         </div>
 
         {/* GENERATE */}
-        <div className="fade-up fade-up-2" style={{ marginBottom: 52 }}>
+        <div className="fade-up fade-up-2 no-print" style={{ marginBottom: 52 }}>
           <button
             className="generate-btn"
             onClick={runPipeline}
@@ -446,7 +456,7 @@ export default function TechNewsletterAgent() {
         {/* ERROR */}
         {error && (
           <div
-            className="fade-up"
+            className="fade-up no-print"
             style={{
               background: "#FFF0F0",
               border: "1px solid #FECDD3",
@@ -527,7 +537,7 @@ export default function TechNewsletterAgent() {
 
         {/* PROGRESS */}
         {searchProgress.length > 0 && step !== "done" && (
-          <div className="fade-up" style={{ marginBottom: 32 }}>
+          <div className="fade-up no-print" style={{ marginBottom: 32 }}>
             <div className="progress-bar" style={{ width: "100%", marginBottom: 20 }} />
             {searchProgress.map((p, i) => (
               <div
@@ -708,6 +718,12 @@ export default function TechNewsletterAgent() {
                 >
                   <button
                     className="save-btn"
+                    onClick={() => window.print()}
+                  >
+                    📄 Download PDF
+                  </button>
+                  <button
+                    className="save-btn"
                     onClick={() => {
                       const el = contentRef.current;
                       if (el) {
@@ -781,6 +797,7 @@ export default function TechNewsletterAgent() {
 
         {/* FOOTER */}
         <div
+          className="no-print"
           style={{
             marginTop: 64,
             paddingTop: 24,
