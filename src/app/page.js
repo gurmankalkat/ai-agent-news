@@ -260,7 +260,7 @@ export default function TechNewsletterAgent() {
         }
         .generate-btn:hover { background: #A31415; transform: translateY(-1px); }
         .generate-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
-        .story-card { padding: 28px 0; border-bottom: 1px solid #E5E5E5; }
+        .story-card { padding: 28px 0; border-bottom: 1px solid #111111; }
         .story-card:last-child { border-bottom: none; }
         .progress-bar {
           height: 2px;
@@ -655,7 +655,6 @@ export default function TechNewsletterAgent() {
                 <div
                   style={{
                     padding: "10px 14px",
-                    background: "#FFFFFF",
                     borderLeft: "3px solid #C8191A",
                     fontSize: 13,
                     fontFamily: "'Inter', sans-serif",
