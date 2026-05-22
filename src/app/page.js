@@ -207,7 +207,7 @@ export default function TechNewsletterAgent() {
     <div
       style={{
         fontFamily: "'Inter', system-ui, sans-serif",
-        background: "#FFFFFF",
+        background: "#F9F5D4",
         minHeight: "100vh",
         color: "#111111",
       }}
@@ -304,7 +304,7 @@ export default function TechNewsletterAgent() {
         @media print {
           @page { margin: 1.5cm; }
           * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-          body { background: white; }
+          body { background: #F9F5D4; }
           .no-print { display: none !important; }
           .save-btn { display: none !important; }
           details { display: none !important; }
@@ -655,7 +655,7 @@ export default function TechNewsletterAgent() {
                 <div
                   style={{
                     padding: "10px 14px",
-                    background: "#F4F4F4",
+                    background: "#FFFFFF",
                     borderLeft: "3px solid #C8191A",
                     fontSize: 13,
                     fontFamily: "'Inter', sans-serif",
