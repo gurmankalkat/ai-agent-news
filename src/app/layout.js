@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Cut The Check",
+  title: "Get The Check",
   description: "Tech news through the Get the Check lens",
 };
 

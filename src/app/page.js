@@ -349,7 +349,7 @@ export default function TechNewsletterAgent() {
               textTransform: "uppercase",
             }}
           >
-            Cut The Check
+            Get The Check
           </span>
         </div>
         <span
@@ -608,7 +608,7 @@ export default function TechNewsletterAgent() {
                   marginBottom: 10,
                 }}
               >
-                ⚡ Cut The Check
+                ⚡ Get The Check
               </div>
               <h2
                 style={{

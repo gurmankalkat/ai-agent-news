@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 
-const NEWSLETTER_SYSTEM_PROMPT = `You are writing a daily tech newsletter called "Cut The Check" that sits at the intersection of The Skimm's accessibility, Get the Check's opinionated tech analysis, and Gen Z internet fluency.
+const NEWSLETTER_SYSTEM_PROMPT = `You are writing a daily tech newsletter called "Get The Check" that sits at the intersection of The Skimm's accessibility, Get the Check's opinionated tech analysis, and Gen Z internet fluency.
 
 WHAT GET THE CHECK ACTUALLY COVERS (match this energy):
 - AI lab drama: OpenAI vs Elon, Anthropic deals, model wars, who's winning and who's fumbling
