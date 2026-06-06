@@ -114,10 +114,19 @@ export async function POST(request) {
     }
 
     if (!newsletter) {
-      return NextResponse.json(
-        { error: "JSON_PARSE_FAILED", rawText: cleaned.substring(0, 1000), stopReason },
-        { status: 422 }
-      );
+      newsletter = {
+        date: dateStr,
+        stories: articles.slice(0, 5).map((a, i) => ({
+          headline: a.title?.substring(0, 60) || "Story unavailable",
+          emoji: "📰",
+          body: a.text?.substring(0, 400) || "Content unavailable.",
+          tldr: a.title || "No summary available.",
+          articleIndex: i + 1,
+        })),
+        signoff: "Generation hiccuped today — raw stories above. We'll be back.",
+        _fallback: true,
+        _stopReason: stopReason,
+      };
     }
   }
 
