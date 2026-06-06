@@ -144,7 +144,7 @@ export default function TechNewsletterAgent() {
 
       const sorted = uniqueArticles
         .sort((a, b) => new Date(b.publishedDate) - new Date(a.publishedDate))
-        .slice(0, 15);
+        .slice(0, 25);
 
       const result = await generateNewsletter(sorted);
 
