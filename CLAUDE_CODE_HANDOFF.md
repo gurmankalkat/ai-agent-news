@@ -100,7 +100,7 @@ The newsletter voice is a specific cocktail:
 
 **The Skimm's accessibility** — Anyone can read it. No jargon walls. Complex topics broken down without being condescending.
 
-**Get the Check's opinionated analysis** — Three women (Maya, Monica/Anika, Priya) who work in tech, have opinions, understand cap tables AND couture. They say "this is mid" when it's mid. They evaluate companies with real financial analysis. They have running jokes (Priya wanting peptides, Maya going through her promos inbox).
+**Get the Check's opinionated analysis** — Three women (Maya, Anika, Priya) who work in tech, have opinions, understand cap tables AND couture. They say "this is mid" when it's mid. They evaluate companies with real financial analysis. They have running jokes (Priya wanting peptides, Maya going through her promos inbox).
 
 **Gen Z internet fluency** — "ngl", "iykyk", "tbh" used SPARINGLY. Pop culture references. Lowercase energy. Short punchy sentences then longer ones for real analysis. Never try-hard.
 
@@ -117,19 +117,17 @@ The newsletter voice is a specific cocktail:
 
 ## Project Files (Reference Material)
 
-These PDFs contain full episode transcripts and show notes from Get the Check:
+These PDFs contain full episode transcripts and show notes from Get the Check. They live in `reference/` at the project root:
 
 ```
-Get_the_Check__Elon_Musk_v__OpenAI_heats_up_surprise_SpaceXAI_and_Anthropic_deal_Cerebras_IPO.pdf
-Get_the_Check__Apple_CEO_Tim_Cook_steps_down_big_tech_s_earnings_xAI_and_Cursor_deal.pdf
-Get_the_Chselves.pdf  (peptide episode — Myra Ahmad / Mansi Hukmani)
-Get_the_Check__Inside_BuildForever__Naveen_Gavini_Former_Pinterest_CPO_on_Launching_Extra_and_Building_for_Joy.pdf
-Get_the_Check__Dimitri_Knight_on_Taste_in_AI_and_What_Designers_Do_Next.pdf
-_AOC_v_Garry_Tan_on_data_centers_Trumps_China_trip_Arish_cofounder_of_Amano_the_hearing_aid.pdf
-Daily_Skimms.pdf  (reference for The Skimm's newsletter format/style)
+reference/get-the-check-elon-musk-openai.pdf
+reference/get-the-check-tim-cook-apple.pdf
+reference/get-the-check-peptide-craze.pdf        (Myra Ahmad / Mansi Hukmani)
+reference/get-the-check-buildforever-naveen.pdf
+reference/get-the-check-dimitri-knight-taste-ai.pdf
+reference/get-the-check-aoc-garry-tan-data-centers.pdf
+reference/daily-skimms.pdf                       (reference for The Skimm's newsletter format/style)
 ```
-
-Plus full transcript PDFs for deeper context on each episode.
 
 ---
 

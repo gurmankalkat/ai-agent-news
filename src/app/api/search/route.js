@@ -9,8 +9,8 @@ export async function POST(request) {
   }
 
   const today = new Date();
-  const twoDaysAgo = new Date(today);
-  twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+  const oneDayAgo = new Date(today);
+  oneDayAgo.setDate(oneDayAgo.getDate() - 1);
 
   const US_NEWS_DOMAINS = [
     "techcrunch.com",
@@ -49,7 +49,7 @@ export async function POST(request) {
     body: JSON.stringify({
       query,
       numResults: 4,
-      startPublishedDate: twoDaysAgo.toISOString(),
+      startPublishedDate: oneDayAgo.toISOString(),
       includeDomains: US_NEWS_DOMAINS,
       contents: {
         text: { maxCharacters: 1000 },
