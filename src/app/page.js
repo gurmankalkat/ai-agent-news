@@ -6,65 +6,37 @@ const GTC_SEARCH_QUERIES = [
   {
     label: "AI Lab Wars",
     icon: "⚔️",
-    queries: [
-      "AI company news funding deal partnership announcement",
-      "AI model research release capability announcement",
-      "AI industry leadership business strategy news",
-    ],
+    queries: ["AI company news funding deal partnership announcement"],
   },
   {
     label: "Big Tech Moves",
     icon: "🏢",
-    queries: [
-      "major tech company earnings revenue financial results",
-      "tech company acquisition merger leadership announcement",
-      "technology company strategy investment business news",
-    ],
+    queries: ["major tech company earnings revenue financial results"],
   },
   {
     label: "Startups & Founders",
     icon: "💰",
-    queries: [
-      "startup funding raise launch founder announcement",
-      "new consumer product company launch growth",
-      "entrepreneur startup business revenue model news",
-    ],
+    queries: ["startup funding raise launch founder announcement"],
   },
   {
     label: "AI Infra & Chips",
     icon: "🔌",
-    queries: [
-      "AI infrastructure investment data center announcement",
-      "semiconductor chip company news funding deal",
-      "energy power technology demand grid announcement",
-    ],
+    queries: ["AI infrastructure investment data center announcement"],
   },
   {
     label: "AI Tools & Dev",
     icon: "🛠️",
-    queries: [
-      "AI software tool developer productivity news",
-      "technology product launch developer workflow announcement",
-      "AI automation enterprise software business news",
-    ],
+    queries: ["AI software tool developer productivity news"],
   },
   {
     label: "Culture x Tech",
     icon: "✨",
-    queries: [
-      "consumer product technology trend launch news",
-      "health wellness technology consumer announcement",
-      "technology culture design brand trend news",
-    ],
+    queries: ["consumer product technology trend launch news"],
   },
   {
     label: "Tech Policy",
     icon: "🌍",
-    queries: [
-      "technology policy regulation government announcement",
-      "international tech trade competition policy news",
-      "AI regulation legislation government technology news",
-    ],
+    queries: ["technology policy regulation government announcement"],
   },
 ];
 
