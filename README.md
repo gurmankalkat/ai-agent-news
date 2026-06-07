@@ -101,6 +101,20 @@ Wraps the Exa neural search API. Called once per beat query.
 
 ---
 
+## From 25+ articles to 5–6 stories
+
+After Exa returns results, the client trims the pool before anything reaches Claude:
+
+1. **Pool** — each beat query returns up to 4 articles. With 7 beats selected that's up to 28 raw results, often less due to the 24h window and domain allowlist.
+2. **Deduplicate** — any URL that appeared in multiple beat queries is collapsed to one entry. A story about an OpenAI funding round might surface under both "AI Lab Wars" and "Startups & Founders"; it's kept once.
+3. **Sort by recency** — remaining articles are sorted by `publishedDate` descending so the freshest news ranks first.
+4. **Slice to 25** — the top 25 go to Claude. This is a soft cap: enough to cover all beats, small enough to stay within a reasonable token budget.
+5. **Claude edits** — Claude reads all 25, decides which 5–6 are actually worth writing about given the beats and voice, and writes full stories for those. The rest are silently dropped. This is intentional — a human editor would do the same thing, and Claude is better at judging newsworthiness in context than any hard-coded filter.
+
+The result is that Exa handles breadth (surfacing everything published today across quality sources) and Claude handles judgment (picking what's interesting and writing it well).
+
+---
+
 ## Generation (`/api/generate`)
 
 Calls Claude to write the newsletter from the pooled articles.
